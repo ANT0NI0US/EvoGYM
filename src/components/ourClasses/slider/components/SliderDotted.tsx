@@ -1,5 +1,4 @@
 import { classes } from "@/shared/types";
-import React from "react";
 
 interface Props {
   goToImage: (index: number) => void;
@@ -13,7 +12,7 @@ const SliderDotted = ({ goToImage, currentIndex, slides }: Props) => {
       {slides.map((slide: classes, slideIndex) => (
         <div
           onClick={() => goToImage(slideIndex)}
-          key={slideIndex}
+          key={`${slide.name} - ${slideIndex}`}
           className={`text-2xl cursor-pointer`}
         >
           {/*<StopIcon className="w-3 h-3" /> */}
