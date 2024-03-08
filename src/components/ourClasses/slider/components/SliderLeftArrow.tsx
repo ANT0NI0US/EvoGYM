@@ -6,7 +6,7 @@ interface Props {
 
 const SliderLeftArrow = ({ prevImage }: Props) => {
   return (
-    <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+    <div className="text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer z-20">
       <ChevronDoubleLeftIcon onClick={prevImage} className="w-5 h-5" />
     </div>
   );

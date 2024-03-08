@@ -21,8 +21,8 @@ const OurClasses = ({ setSelectedPage }: setSelectedPageProps) => {
           facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim
           mattis odio in risus nunc."
         />
-        <Slider />
       </motion.div>
+      <Slider />
     </div>
   );
 };
