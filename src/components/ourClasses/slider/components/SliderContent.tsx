@@ -1,6 +1,7 @@
 import { classes } from "@/shared/types";
 import SliderLeftArrow from "./SliderLeftArrow";
 import SliderRightArrow from "./SliderRightArrow";
+import ImageContent from "./ImageContent";
 
 interface Props {
   currentIndex: number;
@@ -20,10 +21,7 @@ const SliderContent = ({
       {/* LEFT ARROW */}
       <SliderLeftArrow prevImage={prevImage} />
       {/* CONTENT */}
-      <div className="flexCenter flex-col text-center flex-1">
-        <h3 className="font-bold text-xl">{slides[currentIndex].name}</h3>
-        <p className="text-sm">{slides[currentIndex].description}</p>
-      </div>
+      <ImageContent slides={slides} currentIndex={currentIndex} />
       {/* RIGHT ARROW */}
       <SliderRightArrow nextImage={nextImage} />
     </div>

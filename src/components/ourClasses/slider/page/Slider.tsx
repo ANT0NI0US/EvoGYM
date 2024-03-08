@@ -58,7 +58,7 @@ const Slider = () => {
     setCurrentIndex(index);
   };
   return (
-    <div className="max-w-full h-[600px] lg:h-[1000px] w-full mb-16 relative mt-8 md:mt-10">
+    <div className="max-w-full h-[700px] w-full mb-16 relative mt-8 md:mt-10">
       <div className="absolute w-full h-full left-0 top-0 bg-[#00000099] z-10"></div>
       <div
         style={{
