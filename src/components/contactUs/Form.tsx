@@ -73,7 +73,7 @@ const Form = () => {
 
         <button
           type="submit"
-          className="mt-5 text-center w-1/2 md:w-fit rounded-lg bg-secondary-500 px-16 sm:px-20 py-3 transition duration-500 hover:text-white mx-auto flexCenter md:mx-0"
+          className="mt-5 text-center w-1/2 md:w-fit rounded-lg bg-secondary-500 px-16 sm:px-20 py-3 transition duration-500 hover:text-white mx-auto flexCenter md:mx-0 font-extrabold"
         >
           SUBMIT
         </button>
