@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
-import Header from "@/shared/Header";
+import Header from "@/ui/Header";
 
 import Graphics from "./Graphics";
 import Advantages from "./Advantages";
 
-const Benefits = ({ setSelectedPage }: setSelectedPageProps) => {
+export default function Benefits({ setSelectedPage }: setSelectedPageProps) {
   return (
     <div className="py-20 bg-white" id="benefits">
       <motion.div
@@ -28,6 +28,4 @@ const Benefits = ({ setSelectedPage }: setSelectedPageProps) => {
       </motion.div>
     </div>
   );
-};
-
-export default Benefits;
+}

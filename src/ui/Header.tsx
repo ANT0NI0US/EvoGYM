@@ -1,5 +1,6 @@
-import HeadText from "@/shared/HeadText";
-import MotionDiv from "@/shared/MotionDiv";
+import HeadText from "./HeadText";
+import MotionDiv from "./MotionDiv";
+
 
 interface Props {
   textHead: string;

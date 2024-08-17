@@ -1,7 +1,7 @@
-import MotionDivContactUs from "@/shared/MotionDivContactUs";
+import MotionDivContactUs from "@/ui/MotionDivContactUs";
 import { useForm } from "react-hook-form";
 
-const Form = () => {
+export default function Form() {
   const {
     register,
     trigger,
@@ -80,6 +80,4 @@ const Form = () => {
       </form>
     </MotionDivContactUs>
   );
-};
-
-export default Form;
+}

@@ -3,10 +3,10 @@ import { setSelectedPageProps } from "@/shared/types";
 import Sponsors from "./Sponsors";
 import MainContent from "./MainContent";
 
-const Home = ({ setSelectedPage }: setSelectedPageProps) => {
+export default function Home({ setSelectedPage }: setSelectedPageProps) {
   return (
     <div
-      className="mt-[80px] pb-10 md:pb-0 md:h-[calc(100vh-80px)] bg-gray-20 flexBetween flex-col"
+      className="pt-[80px] pb-10 md:pb-0 md:h-screen bg-gray-20 flexBetween flex-col"
       id="home"
     >
       {/* HOME CONTENT */}
@@ -15,6 +15,4 @@ const Home = ({ setSelectedPage }: setSelectedPageProps) => {
       <Sponsors />
     </div>
   );
-};
-
-export default Home;
+}

@@ -1,4 +1,4 @@
-import Header from "@/shared/Header";
+import Header from "@/ui/Header";
 import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
 import { motion } from "framer-motion";
 import Slider from "./slider/page/Slider";

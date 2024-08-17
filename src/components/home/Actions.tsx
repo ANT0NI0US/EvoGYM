@@ -1,7 +1,7 @@
-import MotionDiv from "@/shared/MotionDiv";
 import { setSelectedPageProps } from "@/shared/types";
 import ActionButton from "@/ui/ActionButton";
 import LearnMore from "@/ui/LearnMore";
+import MotionDiv from "@/ui/MotionDiv";
 
 export default function Actions({ setSelectedPage }: setSelectedPageProps) {
   return (

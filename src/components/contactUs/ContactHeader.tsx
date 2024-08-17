@@ -1,7 +1,7 @@
-import HeadText from "@/shared/HeadText";
-import MotionDiv from "@/shared/MotionDiv";
+import HeadText from "@/ui/HeadText";
+import MotionDiv from "@/ui/MotionDiv";
 
-const ContactHeader = () => {
+export default function ContactHeader() {
   return (
     <MotionDiv tailwindClass="text-center sm:text-start mx-4 sm:mx-0" x={-50}>
       <HeadText>
@@ -14,6 +14,4 @@ const ContactHeader = () => {
       </p>
     </MotionDiv>
   );
-};
-
-export default ContactHeader;
+}

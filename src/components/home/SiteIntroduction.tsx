@@ -1,4 +1,4 @@
-import MotionDiv from "@/shared/MotionDiv";
+import MotionDiv from "@/ui/MotionDiv";
 
 export default function SiteIntroduction() {
   return (

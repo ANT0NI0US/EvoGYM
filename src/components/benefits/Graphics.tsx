@@ -1,7 +1,7 @@
 import { setSelectedPageProps } from "@/shared/types";
 import GraphicsContent from "./GraphicsContent";
 
-const Graphics = ({ setSelectedPage }: setSelectedPageProps) => {
+export default function Graphics({ setSelectedPage }: setSelectedPageProps) {
   return (
     <div
       className={`flex-col md:flex-row md:h-5/6 mx-auto flexBetween gap-12 mt-10`}
@@ -17,6 +17,4 @@ const Graphics = ({ setSelectedPage }: setSelectedPageProps) => {
       <GraphicsContent setSelectedPage={setSelectedPage} />
     </div>
   );
-};
-
-export default Graphics;
+}

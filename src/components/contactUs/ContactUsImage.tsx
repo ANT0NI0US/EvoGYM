@@ -1,6 +1,6 @@
-import MotionDivContactUs from "@/shared/MotionDivContactUs";
+import MotionDivContactUs from "@/ui/MotionDivContactUs";
 
-const ContactUsImage = () => {
+export default function ContactUsImage() {
   return (
     <MotionDivContactUs
       tailwindClass="mt-16 basis-2/5 md:mt-0"
@@ -16,6 +16,4 @@ const ContactUsImage = () => {
       </div>
     </MotionDivContactUs>
   );
-};
-
-export default ContactUsImage;
+}
