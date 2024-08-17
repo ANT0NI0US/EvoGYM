@@ -6,43 +6,43 @@ import SliderContent from "../components/SliderContent";
 const slides: Array<classes> = [
   {
     name: "Weight Training Classes",
-    url: "https://i.ibb.co/gPhB5b6/image1.webp",
+    url: "https://i.ibb.co/LNPr6Xp/image1.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Yoga Classes",
-    url: "https://i.ibb.co/f4TWR64/image2.webp",
+    url: "https://i.ibb.co/njKcyrk/image2.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Ab Core Classes",
-    url: "https://i.ibb.co/N7MyWMR/image3.webp",
+    url: "https://i.ibb.co/SQS5Fw9/image3.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Adventure Classes",
-    url: "https://i.ibb.co/N7FvkQw/image4.webp",
+    url: "https://i.ibb.co/pPddd4j/image4.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Fitness Classes",
-    url: "https://i.ibb.co/C84P5sL/image5.webp",
+    url: "https://i.ibb.co/stmkWgw/image5.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Training Classes",
-    url: "https://i.ibb.co/ncwJncr/image6.webp",
+    url: "https://i.ibb.co/bzHFCF1/image6.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];
 
-const Slider = () => {
+export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const prevImage = (): void => {
     const isFirstSlide = currentIndex === 0;
@@ -57,14 +57,15 @@ const Slider = () => {
   const goToImage = (index: number): void => {
     setCurrentIndex(index);
   };
+
   return (
-    <div className="max-w-full h-[700px] w-full mb-16 relative mt-8 md:mt-10">
+    <div className="max-w-full mt-8 md:mt-10 w-full relative h-[calc(100vh-80px)]">
       <div className="absolute w-full h-full left-0 top-0 bg-[#00000099] z-10"></div>
       <div
         style={{
           backgroundImage: `url(${slides[currentIndex].url})`,
         }}
-        className={`w-full h-full bg-center bg-cover duration-1000 relative bg-no-repeat`}
+        className={`w-full h-full bg-center bg-cover relative bg-no-repeat`}
       >
         {/* CONTENT */}
         <SliderContent
@@ -83,6 +84,4 @@ const Slider = () => {
       </div>
     </div>
   );
-};
-
-export default Slider;
+}

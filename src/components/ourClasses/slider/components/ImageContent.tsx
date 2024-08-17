@@ -5,7 +5,7 @@ interface Props {
   slides: classes[];
 }
 
-const ImageContent = ({ slides, currentIndex }: Props) => {
+export default function ImageContent({ slides, currentIndex }: Props) {
   return (
     <div className="flexCenter flex-col text-center flex-1 gap-3">
       <h3 className="font-bold text-xl xs:text-[1.75rem]">
@@ -16,6 +16,4 @@ const ImageContent = ({ slides, currentIndex }: Props) => {
       </p>
     </div>
   );
-};
-
-export default ImageContent;
+}

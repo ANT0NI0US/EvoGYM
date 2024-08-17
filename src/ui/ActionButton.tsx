@@ -1,5 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { selectedPageNum } from "./types";
+import { selectedPageNum } from "../shared/types";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +11,7 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
     <AnchorLink
       onClick={() => setSelectedPage(selectedPageNum.ContactUs)}
       href={`#${selectedPageNum.ContactUs}`}
-      className="btn"
+      className="bg-secondary-500 hover:bg-primary-500 text-black hover:text-white font-bold py-2 px-10 rounded-3xl transition-all duration-300"
     >
       {children}
     </AnchorLink>

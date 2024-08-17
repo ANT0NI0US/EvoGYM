@@ -14,13 +14,6 @@ body,
   @apply text-gray-500;
 }
 
-.btn {
-  @apply bg-secondary-500 hover:bg-primary-500 text-black hover:text-white font-bold;
-  @apply py-2 px-10;
-  @apply rounded;
-  @apply transition-colors;
-}
-
 .flexBetween {
   @apply flex justify-between items-center;
 }
@@ -31,10 +24,6 @@ body,
 
 .flexEvenly {
   @apply flex items-center justify-evenly;
-}
-
-.active-stop-icon {
-  @apply bg-red-400 w-4 h-4;
 }
 
 .inputStyles {

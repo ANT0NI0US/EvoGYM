@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "./Link";
 import { selectedProps } from "@/shared/types";
 import useMediaQuery from "@/hooks/UseMediaQuery";
-import ActionButton from "@/shared/ActionButton";
+import ActionButton from "@/ui/ActionButton";
 
 interface navbarProps extends selectedProps {
   isTopOfPage: boolean;
@@ -27,7 +27,7 @@ const Navbar = ({
   return (
     <Fragment>
       <div
-        className={`${navbarBackground} fixed top-0 w-full py-6 shadow-[0_0_1.5px]  shadow-gray-800 z-30`}
+        className={`${navbarBackground} h-[80px] fixed top-0 w-full py-6 shadow-[0_0_1.5px] shadow-gray-800 z-30`}
       >
         <div className="flexBetween mx-auto w-5/6 gap-10">
           <div className="w-[110px]">

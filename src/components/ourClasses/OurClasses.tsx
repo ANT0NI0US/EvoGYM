@@ -3,10 +3,10 @@ import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
 import { motion } from "framer-motion";
 import Slider from "./slider/page/Slider";
 
-const OurClasses = ({ setSelectedPage }: setSelectedPageProps) => {
+export default function OurClasses({ setSelectedPage }: setSelectedPageProps) {
   return (
     <div
-      className="pt-24 mb-10 pb-10 md:pb-0 min-h-fit bg-gray-20 flexBetween flex-col"
+      className="pt-20 min-h-fit bg-gray-20 flexBetween flex-col"
       id="ourclasses"
     >
       <motion.div
@@ -25,6 +25,4 @@ const OurClasses = ({ setSelectedPage }: setSelectedPageProps) => {
       <Slider />
     </div>
   );
-};
-
-export default OurClasses;
+}

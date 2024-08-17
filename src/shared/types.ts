@@ -5,6 +5,12 @@ export enum selectedPageNum {
   ContactUs = "contactus",
 }
 
+// benefits
+export interface SponsorsProps {
+  photo: string;
+  name: string;
+}
+
 export interface setSelectedPageProps {
   setSelectedPage: (page: selectedPageNum) => void;
 }
