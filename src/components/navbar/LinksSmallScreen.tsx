@@ -1,6 +1,6 @@
 import { selectedProps } from "@/shared/types";
 import Links from "./Links";
-import { XMarkIcon } from "@heroicons/react/24/solid";
+import { IoClose } from "react-icons/io5";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 
 interface samllLinkProps extends selectedProps {
@@ -26,7 +26,7 @@ export default function LinksSmallScreen({
           onClick={closeSidebar}
           className="absolute top-3 right-3 bg-red-700 rounded-full p-1"
         >
-          <XMarkIcon className="h-5 w-5 text-white" />
+          <IoClose className="h-5 w-5 text-white" />
         </button>
 
         <div className="flex flex-col gap-5">

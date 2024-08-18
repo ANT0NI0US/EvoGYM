@@ -1,4 +1,7 @@
-import { ChevronDoubleLeftIcon , ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import {
+  MdKeyboardDoubleArrowLeft,
+  MdKeyboardDoubleArrowRight,
+} from "react-icons/md";
 
 interface Props {
   movement: () => void;
@@ -7,11 +10,11 @@ interface Props {
 
 export default function SliderMovements({ movement, isLeft }: Props) {
   return (
-    <div className="text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer z-20">
+    <div className="text-2xl rounded-full p-2 bg-black/20 transition-all hover:bg-black/40 text-white cursor-pointer z-20">
       {isLeft ? (
-        <ChevronDoubleLeftIcon onClick={movement} className="w-5 h-5" />
+        <MdKeyboardDoubleArrowLeft onClick={movement} className="w-5 h-5" />
       ) : (
-        <ChevronDoubleRightIcon onClick={movement} className="w-5 h-5" />
+        <MdKeyboardDoubleArrowRight onClick={movement} className="w-5 h-5" />
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { AiOutlineMenu } from "react-icons/ai";
 import { selectedProps } from "@/shared/types";
 import useMediaQuery from "@/hooks/UseMediaQuery";
 import LinksSmallScreen from "./LinksSmallScreen";
@@ -43,7 +43,7 @@ export default function Navbar({
             onClick={() => setShowSidebar((prev) => !prev)}
             className="rounded-full bg-secondary-500 p-2 block md:hidden"
           >
-            <Bars3Icon className="text-white h-6 w-6" />
+            <AiOutlineMenu className="text-white h-6 w-6" />
           </button>
         </div>
       </div>
