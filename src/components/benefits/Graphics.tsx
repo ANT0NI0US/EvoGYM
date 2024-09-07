@@ -9,7 +9,7 @@ export default function Graphics({ setSelectedPage }: setSelectedPageProps) {
       {/* IMAGE */}
       <img
         className="basis-3/5"
-        src="https://i.ibb.co/RPBhBQQ/Benefits-Page-Graphic.webp"
+        src="https://i.ibb.co/mXMtFwY/Benefits.png"
         alt="Benefits-Page-Graphic"
       />
 

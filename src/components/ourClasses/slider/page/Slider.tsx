@@ -37,7 +37,7 @@ export default function Slider() {
         <img
           src={slides[currentIndex].url}
           alt="image"
-          className="object-center object-cover w-full max-h-full transition-all duration-1000 ease-in-out"
+          className="object-center object-cover w-full h-full transition-all duration-1000 ease-in-out"
         />
         {/* CONTENT */}
         <SliderContent

@@ -11,7 +11,7 @@ export default function ContactUsImage() {
         <img
           className="w-full"
           alt="contact-us-page-graphic"
-          src="https://i.ibb.co/dKtjV3s/Contact-Us-Page-Graphic.webp"
+          src="https://i.ibb.co/s3ndwBc/Contact-Us.png"
         />
       </div>
     </MotionDivContactUs>

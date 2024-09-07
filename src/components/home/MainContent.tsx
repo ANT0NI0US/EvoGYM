@@ -19,8 +19,8 @@ export default function MainContent({ setSelectedPage }: setSelectedPageProps) {
       {/* HOME IMAGE */}
       <img
         className="basis-3/5"
-        src="https://i.ibb.co/mNKFNc3/Home-Page-Graphic.webp"
-        alt="homePagePhoto"
+        src="https://i.ibb.co/bdh28Rm/Home-Page-Graphic.webp"
+        alt="Home-Page-Graphic"
       />
     </motion.div>
   );
