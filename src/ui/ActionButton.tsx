@@ -1,12 +1,12 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { selectedPageNum } from "../shared/types";
+import { selectedPageNum } from "@/shared/types";
 
 interface Props {
   children: React.ReactNode;
   setSelectedPage: (page: selectedPageNum) => void;
 }
 
-const ActionButton = ({ children, setSelectedPage }: Props) => {
+export default function ActionButton({ children, setSelectedPage }: Props) {
   return (
     <AnchorLink
       onClick={() => setSelectedPage(selectedPageNum.ContactUs)}
@@ -16,6 +16,4 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
       {children}
     </AnchorLink>
   );
-};
-
-export default ActionButton;
+}

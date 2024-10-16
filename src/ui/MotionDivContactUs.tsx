@@ -7,7 +7,12 @@ interface Props {
   y?: number;
 }
 
-const MotionDivContactUs = ({ children, tailwindClass, delay, y }: Props) => {
+export default function MotionDivContactUs({
+  children,
+  tailwindClass,
+  delay,
+  y,
+}: Props) {
   return (
     <motion.div
       initial="hidden"
@@ -23,6 +28,4 @@ const MotionDivContactUs = ({ children, tailwindClass, delay, y }: Props) => {
       {children}
     </motion.div>
   );
-};
-
-export default MotionDivContactUs;
+}

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/Navbar.tsx";
-import { selectedPageNum } from "./shared/types";
 import Home from "@/components/home/Home";
-import Benefits from "./components/benefits/Benefits";
-import OurClasses from "./components/ourClasses/OurClasses";
-import ContactUs from "./components/contactUs/ContactUs";
-import Footer from "./components/footer/Footer";
+import Benefits from "@/components/benefits/Benefits";
+import OurClasses from "@/components/ourClasses/OurClasses";
+import ContactUs from "@/components/contactUs/ContactUs";
+import Footer from "@/components/footer/Footer";
+import { selectedPageNum } from "@/shared/types";
 
-function App() {
+export default function App() {
   const [selectedPage, setSelectedPage] = useState<selectedPageNum>(
     selectedPageNum.Home
   );
@@ -39,5 +39,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import SiteIntroduction from "./SiteIntroduction";
 import Actions from "./Actions";
 import { selectedPageNum, setSelectedPageProps } from "@/shared/types";

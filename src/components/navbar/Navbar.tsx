@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { selectedProps } from "@/shared/types";
-import useMediaQuery from "@/hooks/UseMediaQuery";
 import LinksSmallScreen from "./LinksSmallScreen";
 import Logo from "./Logo";
 import LinksBigScreen from "./LinksBigScreen";
+import useMediaQuery from "@/hooks/UseMediaQuery";
 
 interface navbarProps extends selectedProps {
   isTopOfPage: boolean;

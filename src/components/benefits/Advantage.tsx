@@ -1,5 +1,5 @@
-import { BenefitProps, setSelectedPageProps } from "@/shared/types";
 import { motion } from "framer-motion";
+import { BenefitProps, setSelectedPageProps } from "@/shared/types";
 import LearnMore from "@/ui/LearnMore";
 
 const childVariant = {

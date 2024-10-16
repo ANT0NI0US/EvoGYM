@@ -1,8 +1,7 @@
-
-import { setSelectedPageProps } from "@/shared/types";
 import ActionButton from "@/ui/ActionButton";
 import HeadText from "@/ui/HeadText";
 import MotionDiv from "@/ui/MotionDiv";
+import { setSelectedPageProps } from "@/shared/types";
 
 export default function GraphicsContent({
   setSelectedPage,

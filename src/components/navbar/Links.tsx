@@ -1,5 +1,5 @@
-import { selectedPageNum, selectedProps } from "@/shared/types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { selectedPageNum, selectedProps } from "@/shared/types";
 
 interface linksProps extends selectedProps {
   closeSidebar?: () => void;
@@ -31,7 +31,7 @@ export default function Links({
           }
         }}
         href={`#${lowerCasePage}`}
-        className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""} transation duration-500 hover:text-primary-300 list-none font-bold`}
+        className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""} transition-all duration-500 hover:text-primary-300 list-none font-bold`}
       >
         {link?.text}
       </AnchorLink>

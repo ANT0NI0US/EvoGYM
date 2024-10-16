@@ -1,13 +1,13 @@
-import Header from "@/ui/Header";
-import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
 import { motion } from "framer-motion";
 import Slider from "./slider/page/Slider";
+import Header from "@/ui/Header";
+import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
 
 export default function OurClasses({ setSelectedPage }: setSelectedPageProps) {
   return (
     <div
-      className="pt-20 min-h-fit bg-gray-20 flexBetween flex-col"
-      id="ourclasses"
+      className="pt-10 min-h-fit bg-gray-20 flexBetween flex-col"
+      id="ourClasses"
     >
       <motion.div
         onViewportEnter={() => setSelectedPage(selectedPageNum.OurClasses)}

@@ -8,7 +8,7 @@ import Advantages from "./Advantages";
 
 export default function Benefits({ setSelectedPage }: setSelectedPageProps) {
   return (
-    <div className="py-20 bg-white" id="benefits">
+    <div className="py-10 bg-white" id="benefits">
       <motion.div
         className="w-5/6 mx-auto"
         onViewportEnter={() => setSelectedPage(selectedPageNum.Benefits)}

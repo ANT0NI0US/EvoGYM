@@ -1,5 +1,5 @@
-import { setSelectedPageProps } from "@/shared/types";
 import GraphicsContent from "./GraphicsContent";
+import { setSelectedPageProps } from "@/shared/types";
 
 export default function Graphics({ setSelectedPage }: setSelectedPageProps) {
   return (

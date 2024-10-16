@@ -1,9 +1,9 @@
-import { selectedProps } from "@/shared/types";
-import Links from "./Links";
 import { IoClose } from "react-icons/io5";
+import Links from "./Links";
+import { selectedProps } from "@/shared/types";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 
-interface samllLinkProps extends selectedProps {
+interface smallLinkProps extends selectedProps {
   closeSidebar: () => void;
   showSidebar: boolean;
 }
@@ -13,7 +13,7 @@ export default function LinksSmallScreen({
   setSelectedPage,
   closeSidebar,
   showSidebar,
-}: samllLinkProps) {
+}: smallLinkProps) {
   const ref = useOutsideClick(closeSidebar);
   return (
     <>

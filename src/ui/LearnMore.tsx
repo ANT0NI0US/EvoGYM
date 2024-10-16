@@ -1,7 +1,7 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { selectedPageNum, setSelectedPageProps } from "../shared/types";
+import { selectedPageNum, setSelectedPageProps } from "@/shared/types";
 
-const LearnMore = ({ setSelectedPage }: setSelectedPageProps) => {
+export default function LearnMore({ setSelectedPage }: setSelectedPageProps) {
   return (
     <AnchorLink
       onClick={() => setSelectedPage(selectedPageNum.ContactUs)}
@@ -11,6 +11,4 @@ const LearnMore = ({ setSelectedPage }: setSelectedPageProps) => {
       Learn More
     </AnchorLink>
   );
-};
-
-export default LearnMore;
+}

@@ -1,6 +1,6 @@
+import Links from "./Links";
 import { selectedProps } from "@/shared/types";
 import ActionButton from "@/ui/ActionButton";
-import Links from "./Links";
 
 export default function LinksBigScreen({
   selectedPage,

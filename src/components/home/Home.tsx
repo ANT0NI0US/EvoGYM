@@ -1,7 +1,6 @@
-import { setSelectedPageProps } from "@/shared/types";
-
 import Sponsors from "./Sponsors";
 import MainContent from "./MainContent";
+import { setSelectedPageProps } from "@/shared/types";
 
 export default function Home({ setSelectedPage }: setSelectedPageProps) {
   return (

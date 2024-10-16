@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { BenefitProps, setSelectedPageProps } from "@/shared/types";
-import Advantage from "./Advantage";
-
 import { FaHome, FaUsers } from "react-icons/fa";
 import { PiGraduationCapFill } from "react-icons/pi";
+import Advantage from "./Advantage";
+import { BenefitProps, setSelectedPageProps } from "@/shared/types";
 
 const iconStyle: string = "h-7 w-7";
 
@@ -38,7 +37,7 @@ export default function Advantages({ setSelectedPage }: setSelectedPageProps) {
   return (
     <motion.div
       variants={container}
-      className="flexCenter gap-8 flex-col sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] mt-8 md:mt-10"
+      className="flexCenter gap-5 flex-col sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] mt-8 md:mt-10"
     >
       {allBenefits.map((benefit: BenefitProps) => {
         return (

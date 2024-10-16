@@ -7,7 +7,12 @@ interface Props {
   x?: number;
 }
 
-const MotionDiv = ({ children, tailwindClass, delay, x }: Props) => {
+export default function MotionDiv({
+  children,
+  tailwindClass,
+  delay,
+  x,
+}: Props) {
   return (
     <motion.div
       initial="hidden"
@@ -23,6 +28,4 @@ const MotionDiv = ({ children, tailwindClass, delay, x }: Props) => {
       {children}
     </motion.div>
   );
-};
-
-export default MotionDiv;
+}
