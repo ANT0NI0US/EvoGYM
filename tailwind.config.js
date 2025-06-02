@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
 const abstractImg = "https://i.ibb.co/qpn4pV7/Abstract-Waves.webp";
 const sparklesImg = "https://i.ibb.co/xhNCG9h/Sparkles.webp";
 const circlesImg = "https://i.ibb.co/ckH8HtV/Circles.webp";
-module.exports = {
+
+export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -17,11 +17,11 @@ module.exports = {
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: {
         "gradient-yellowred":
           "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
-      }),
+      },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
